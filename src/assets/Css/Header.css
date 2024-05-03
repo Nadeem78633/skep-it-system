@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px; /* Fixed height including the shadow */
+  background-color: transparent;
+  box-shadow: 0 4px 6px -3px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  margin: 0 10px;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 30px;
+}
+.battery {
+  height: 12px;
+}
+.sound {
+  height: 15px;
+}
+.wifi {
+  height: 15px;
+}

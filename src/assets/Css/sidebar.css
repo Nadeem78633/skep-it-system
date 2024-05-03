@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(212, 209, 205, 0.5);
+  width: 50px; /* Adjust width as needed */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: #ffd700; /* Change color on hover as desired */
+}

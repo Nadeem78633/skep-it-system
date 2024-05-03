@@ -1,0 +1,15 @@
+{
+  "addFolder": {
+    "id": 1,
+    "label": "Add Folder"
+  },
+  "addFile": {
+    "id": 2,
+    "label": "Add File",
+    "subOptions": [
+      { "id": 21, "label": "Word" },
+      { "id": 22, "label": "Excel" },
+      { "id": 23, "label": "PowerPoint" }
+    ]
+  }
+}

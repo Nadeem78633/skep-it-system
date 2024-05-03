@@ -1,0 +1,92 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px; /* Fixed height including the shadow */
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px -3px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.divider {
+  margin: 0 10px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  margin-right: 30px;
+}
+
+.file {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cartoon */
+.cartoon {
+  position: absolute;
+  top: 60%;
+  left: -1%;
+  transform: translate(-70%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.cartoon div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.r {
+  border-radius: 100%;
+}
+
+.hb::before,
+.ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bubble {
+  width: 40%;
+  height: 25%;
+  left: 73%;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+
+  background: #ffc815;
+}
+
+/* code for line link */
+.bubble::before {
+  width: 40%;
+  height: 100%;
+  bottom: -51%;
+  border-radius: 50%;
+  left: 10%;
+  box-shadow: 0.5vmin 0 0.25vmin rgba(0, 0, 0, 0.5),
+    2vmin -0.5vmin 0 0.5vmin #ffc815; /* Added spread radius and adjusted colors */
+  clip-path: polygon(0% 49%, 150% 48%, 150% 100%, 0% 100%);
+}

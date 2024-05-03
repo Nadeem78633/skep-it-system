@@ -1,0 +1,169 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.left-half,
+.right-half {
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.left-half {
+  background-position: right;
+  margin-right: 3px;
+  border-top-right-radius: 50px;
+}
+
+.right-half {
+  background-position: left;
+  margin-left: 3px;
+  border-top-left-radius: 50px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.login-form {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.blob {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+  position: relative;
+  z-index: 0;
+}
+.girl-image {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.welcome {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0;
+}
+.email {
+  background-color: #a9a9a8;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px 3px 10px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.email:focus {
+  outline: none;
+}
+.email::placeholder {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.email:-webkit-autofill {
+  background-color: #a9a9a8 !important;
+}
+.remember {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.remember input {
+  height: 21px;
+  width: 20px;
+  margin-right: 15px;
+}
+.login-button {
+  background-color: #282828;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px 3px 10px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.login-button:focus {
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: 25rem;
+  }
+  .logo {
+    margin-top: 100px;
+  }
+  .card-content {
+    margin-bottom: 0px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blob {
+    width: 200px;
+    height: auto;
+  }
+  .girl-image {
+    height: 70px;
+    width: 70px;
+    top: 30%;
+    left: 52%;
+  }
+  .left-half {
+    height: 100vh;
+  }
+
+  .right-half {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login-form {
+    width: 80%;
+  }
+}
